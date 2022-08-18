@@ -1,0 +1,300 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40px;
+  pointer-events: none;
+  
+}
+
+.App-header strong{
+  color: #F15412;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 5s ease-in-out;
+  }
+}
+
+.App-header {
+  background: #8e9eab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #303030;
+  
+  height: auto;
+  flex-wrap: wrap;
+  
+  border-bottom: 2px solid #303030;
+  margin: 0px auto;
+  max-width: 100%;
+
+  
+}
+
+.App-link {
+  color: #F15412;
+
+  
+}
+
+
+.Navbar {
+  border-left: 2px solid #F15412;
+  border-right: 2px solid #F15412;
+  
+  clear: both;
+  float: none;
+  margin: 0px auto;
+  max-width: 95%;
+  
+  
+  
+ 
+}
+
+.Navbar-list{
+  
+  display: flex;
+  
+  list-style: none;
+  overflow: auto;
+  overflow-wrap: break-word;
+  
+  justify-content: start;
+  align-items: center;
+
+
+  padding-left: 0px;
+  
+  
+  
+}
+
+
+
+.Navbar-list li a{
+  
+  display: block;
+  padding: 10px 10px;
+  border-right: 1px solid #303030;
+  text-decoration: none;
+  color: #F15412 ;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+
+  font-weight: bold;
+}
+
+.Navbar-list li:nth-last-child(1) a{
+  border-right: none;
+}
+
+.Navbar-list li a:hover{
+  
+  background-color: #F15412;
+  color: whitesmoke;
+  
+}
+.Informacion{
+  background-color: #F8BA43;
+  padding: 20px;
+}
+
+.Informacion h1{
+  font-size: 200%;
+  
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.Informacion h2{
+  font-size: 150%;
+  color: #303030;
+  text-align: center;
+  
+  text-transform: uppercase;
+}
+
+.Integrantes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.Integrante{
+  /*card*/
+  background: rgba( 255, 255, 255, 0.45 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  margin: 10px;
+  padding: 10px;
+  max-width: 200px;
+
+
+  transition: all 0.2s ease-in-out;
+  
+  transform: rotate3d(0, 0, 1, 10deg);
+}
+
+.Integrante:hover{
+  transform: scale(1.2);
+  z-index: 9;
+  
+  
+}
+
+.Nombre{
+  font-size: 20px;
+  font-weight: bold;
+  color: #F15412;
+  text-transform: uppercase;
+  
+}
+
+.Carnet{
+  font-size: 14px;
+  
+  letter-spacing: 10px;
+}
+.Funciones{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  
+}
+
+
+.Funcion{
+  background: rgba( 255, 255, 255, 0.45 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  margin: 10px;
+  padding: 10px;
+  
+  max-width: 80%;
+  
+  
+
+
+}
+
+.Formulario{
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+
+.Formulario label{
+  font-size: 20px;
+  font-weight: bold;
+  
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+.Formulario input{
+  font-size: 20px;
+  
+  
+  text-transform: uppercase;
+  margin: 10px auto;
+  text-align: center;
+  width: 85%;
+  
+  
+}
+
+.Formulario button {
+  border-radius: 4px;
+  
+  font-size: large;
+  padding: 4px 6px;
+  margin: 10px auto;
+  color: #303030 !important;
+  transition: all 0.2s ease-in-out;
+  width: 75%;
+  
+}
+
+.Formulario button::after {
+  max-width: 100%;
+  height: 4px;
+  display: block;
+  content: "";
+  background: #fe8c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  opacity: 1;
+  margin-bottom: 0px;
+  margin-top: 1px;
+  
+}
+
+.Formulario button:hover {
+  background: #fe8c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+  color: wheat !important;
+}
+
+.Formulario button:active{
+  transform: scale(0.9);
+  transition: none;
+}
+
+.Formulario p{
+  
+  
+  font-size: 20px;
+  
+  color: #F15412;
+  text-transform: uppercase;
+  
+}
+
+@keyframes App-logo-spin {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
